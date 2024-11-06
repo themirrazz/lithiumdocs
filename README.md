@@ -21,3 +21,14 @@ Just keep reading! Once you have the Google Docs set up for using Lithium, we ha
 
 ## Let's install Lithium to your Document!
 ### Step 1. Make sure your document is properly prepared.
+Lithium requires a structure. As someone getting into both professional and fanfic writing myself, I'd like to show you how I personally structure my Lithium-compatible documents:
+![Screenshot 2024-11-06 10 28 35 AM](https://github.com/user-attachments/assets/40d4a23c-7ec2-4779-8d31-0d41a8813880)
+
+Of course, you don't have to have it structured _exactly_ like this, this is just a suggestion. But certain elements are required.
+* The first document tab must be a tab that contains all of your works (or work, if it's only one story).
+  * The name of the "folder tab" and your works does not matter.
+* After that, no specific order of tabs is required.
+* If you want to add a "Canon & Lore" tab that supports AI Explanations, you can create a special tab.
+  * This tab does not have to be in a specific index.
+  * The tab's name must much exactly "Canon & Lore" or the same phrase in Japanese, "カノン&ロア" (this exact transliteration must be used).
+  * Only AI Explanations work there as of now.
