@@ -41,7 +41,7 @@ You'll be greeted with a foreign new dashboard, which will probably look like th
 ![Screenshot 2024-11-06 11 05 16 AM](https://github.com/user-attachments/assets/43ce3671-1cea-485a-b386-ed5f0ff8aa1f)
 
 ### Step 3. Prepare the other files.
-Rename the default file, `Code.gs`, to `Lithium.gs` by hovering over it and click the three-dot menu. Just type `Lithium` - in Google Apps Script editor, it automatically adds the file extension. Now, press the "+" button and create three new scripts: `Utils`, `ExplainAI`, and `Preferences`. Then, add one HTML file called `ExplainLive`. It should now look like this:<br/>
+Rename the default file, `Code.gs`, to `Lithium.gs` by hovering over it and click the three-dot menu. Just type `Lithium` - in Google Apps Script editor, it automatically adds the file extension. Now, press the "+" button and create three new scripts: `Utils`, `ExplainAI`, `GoogleForms`, and `Preferences`. Then, add one HTML file called `ExplainLive`. It should now look like this:<br/>
 ![Screenshot 2024-11-06 11 09 22 AM](https://github.com/user-attachments/assets/48210119-9326-43d3-847e-b4b50cd64196)
 
 ### Step 4. Copy and paste time!
