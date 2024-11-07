@@ -38,7 +38,7 @@ Keep choosing the next match until you see something that looks similar to this:
 
 ## Step 9. Copy the second ID
 The second ID is the second number.<br/>
-![Screenshot 2024-11-07 9 37 31 AM](https://github.com/user-attachments/assets/5ea19086-3460-4d37-878a-e4ba0130861f)
+![Screenshot 2024-11-07 9 40 36 AM](https://github.com/user-attachments/assets/d9e5c345-d14b-4c8f-b7bf-5384cf4a6d16)
 <br/>
 Now, just paste it into your config like I have:<br/>
 ![Screenshot 2024-11-07 9 38 20 AM](https://github.com/user-attachments/assets/01b13a05-2deb-40ad-9168-597b49fcea5f)
