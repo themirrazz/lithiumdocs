@@ -14,7 +14,7 @@ Yes! The reading experience! Writers often have people who give feedback on thei
 Our main focus is our "Explain Live" feature - it's a pop-out sidebar that shows useful information. It features entries from the themirrazz' [DictionaryXYZ](https://github.com/themirrazz/DictionaryXYZ) dictionary, and it supports displaying any footnotes added via the native Google Docs Footnote feature. It even supports AI Explanations!
 
 ### I don't want AI training on my stories!
-Ah, I see. Lots of artists - of both images, photos, songs - hate AI for being trained on their data and using it without permission. But we believe that AI can work *with* artists - and this is example. And we try to minimize the possibility of having your data trained on without your permission. Don't believe us? Well then, boy, do we have the document for you: check out the [AI Explanations Data Policy](/AI Explanations Data Policy.md)!
+Ah, I see. Lots of artists - of both images, photos, songs - hate AI for being trained on their data and using it without permission. But we believe that AI can work *with* artists - and this is example. And we try to minimize the possibility of having your data trained on without your permission. Don't believe us? Well then, boy, do we have the document for you: check out the [AI Explanations Data Policy](/AIDataPolicy.md)!
 
 ### If you say so... How do I get started?
 Just keep reading! Once you have the Google Docs set up for using Lithium, we have an entire document for once you've gotten it installed and are ready to get started *for real*!
