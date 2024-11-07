@@ -117,8 +117,13 @@
         outline: none;
       }
 
+      .explain-text-input:hover:not(:focus), .explain-textarea-div:hover:not(:focus) {
+        background-color: #0000004f;
+      }
+
       .explain-text-input:focus, .explain-textarea-div:focus {
         cursor: text;
+        background-color: #0000009f;
       }
 
       .explain-textarea-div {
@@ -134,6 +139,13 @@
         border: none;
         outline: none;
         cursor: pointer;
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: hidden;
+      }
+
+      .explain-textarea-div::-webkit-scrollbar {
+        display: none;
       }
 
       #FeedBackContainer {
@@ -152,7 +164,9 @@
         It seems like you're a little lost there, nii-san! Don't worry though! You can select which book you're trying to read here!
       </p>
       <!-- customize this with your list of books -->
-      <div class='explain-button' onclick='OpenBook(0);'>Go to books</div>
+      <div class='explain-button' onclick='OpenBook(0);'>Nofi: The Precursor</div>
+      <div class='explain-button' onclick='OpenBook(1);'>Nofi - Book 1</div>
+      <div class='explain-button' onclick='OpenBook(2);'>Nofi - Book 2</div>
     </div>
     <div class='explain' id='PleaseSelect' style='display: none;'>
       <p class='explain-title'>Explain Live</p>
@@ -295,12 +309,12 @@
       async function ConstantlyLoad() {
         try {
           var sel = await LoadFootnotesV2();
-          if(sel.range!=selection.range || selection.tabId!=sel.data.tabId) {
+          if((sel.range!=selection.range) || selection.tabId!=sel.data.tabId) {
             selection.selected = sel.selected;
             selection.range = sel.range;
             data = sel.data;
+            selection.tabId = sel.data.tabId;
             UXSettings = data.UXSettings;
-            selection.tabId != sel.data.tabId;
             OnRefresh();
           }
           setTimeout(function () {
@@ -540,7 +554,11 @@
 
       function StartFeedback() {
         FeedBackContainer.style.transition = '1s';
-        FeedBackEmail.value = "";
+        FeedBackEmail.value = String(data.emailAddress||"");
+        FeedBackEmail.onclick = function () {
+          FeedBackEmail.value = '';
+          FeedBackEmail.onclick = null;
+        }
         FeedBackAnySuggestions.innerHTML = "";
         FeedBackOkay.style.display = 'none';
         FeedBackDone.style.display = 'none';
