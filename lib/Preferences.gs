@@ -33,7 +33,9 @@ var UXSettings = {
 
 // Modify the inner workings (to a limited extent)
 var InnerWorkings = {
-  Feedback: null
+  Feedback: {
+    Type: 'Hidden'
+  }
 };
 
 
