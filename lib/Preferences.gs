@@ -19,8 +19,10 @@ to have to take time out of your writing to fix the UX, and can be
 even more annoying to accidentally break something without even
 noticing it.
 
-For instructions, please see the GitHub's project documentation:
+Technical documentation:
 https://github.com/themirrazz/lithiumdocs/tree/main/docs
+Guides:
+https://github.com/themirrazz/lithiumdocs/tree/main/guides
 */
 
 // Change the user experience (UX) to your liking/style.
