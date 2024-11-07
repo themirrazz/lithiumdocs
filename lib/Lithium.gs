@@ -20,8 +20,8 @@ function OnDocumentOpen() {
 
 function OnAboutShow() {
   DocumentApp.getUi().alert(
-    'Lithium by themirrazz, v0.0.1\n'
-    + '(C) themirrazz, 6 November 2024, all rights reserved\n\n' +
+    'Lithium by themirrazz, v0.0.2\n'
+    + '(C) themirrazz, 7 November 2024, all rights reserved\n\n' +
     'Licensed under GNU GPLv3'
     + '\n' +
     'https://github.com/themirrazz/lithiumdocs/'
@@ -38,6 +38,7 @@ function FootnotesV2() {
 
 // Load everything for Explain Live
 function LoadFootnotesV2() {
+  var user = Session.getActiveUser();
   var doc = DocumentApp.getActiveDocument();
   var selection = doc.getSelection();
   var tab = doc.getActiveTab();
@@ -48,12 +49,13 @@ function LoadFootnotesV2() {
       ranges: [],
       data: {
         footnotes: [],
-        feedback: InnerWorkings.Feedback ? true: false,
+        feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.type!='Hidden': false,
         aiInput: null,
         tabTitle: tab ? tab.getTitle() : null,
         myWorks: doc.getTabs()[0].getChildTabs().includes(tab),
         tabId: tab ? tab.getId() : null,
-        UXSettings: UXSettings
+        UXSettings: UXSettings,
+        emailAddress: user.getEmail()
       }
     }
   };
@@ -64,12 +66,13 @@ function LoadFootnotesV2() {
     ranges: [],
     data: {
       footnotes: GetFootnotesFromSelection(),
-      feedback: InnerWorkings.Feedback ? true: false,
+      feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.type!='Hidden': false,
       aiInput: GetSelectionTextFromRanges(ranges),
       tabTitle: tab ? tab.getTitle() : null,
       myWorks: doc.getTabs()[0].getChildTabs().includes(tab),
       tabId: tab ? tab.getId() : null,
-      UXSettings: UXSettings
+      UXSettings: UXSettings,
+      emailAddress: user.getEmail()
     }
   };
   return data;
