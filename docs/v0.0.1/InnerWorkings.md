@@ -2,41 +2,25 @@
 Limited customization of the backend.
 ```ts
 let InnerWorkings = {
-  Feedback?: <GoogleFormFeedback|undefined>
-}
-```
-
-## Properties
-### Feedback <GoogleFormFeedback|undefined>
-An object representing configuration on how to handle feedback. *(Optional)*
-
-## Types
-### GoogleFormFeedback
-All of the "keys" are the internal IDs of inputs in Google Forms. You have to use View-Source and/or Inspect Element to find the IDs of inputs.
-```ts
-let feedback:GoogleFormFeedback? = {
-  Type: "GoogleForm",
-  FormViewID: string,
-  EmailAddressKey: string,
-  BookIDKey: string,
-  SelectedTextKey: string,
-  JSONKey: string,
-  SuggestionsKey: string
-}
-```
-
-#### Example working configuration
-```javascript
-// Modify the inner workings (to a limited extent)
-var InnerWorkings = {
-  Feedback: {
-    Type: 'GoogleForms',
-    FormViewID: 'CENSORED_TO_PREVENT_SPAMMING',
-    EmailAddressKey: '1387144609',
-    BookIDKey: '621539592',
-    SelectedTextKey: '1335900217',
-    JSONKey: '742317699',
-    SuggestionsKey: '1789107585'
+  Feedback?: {
+    Type: "GoogleForms",
+    FormViewID?: string,
+    EmailAddressKey?: string,
+    BookIDKey?: string,
+    SelectedTextKey?: string,
+    JSONKey?: string,
+    SuggestionsKey?: string
   }
-};
+}
 ```
+## Feedback <Object>
+An object representing a configuration for receiving Feedback. Right now, we only support Google Forms, but we're planning on adding support for other platforms like Microsoft Forms or MailChimp Survey.
+
+### Type <String>
+The type of form. As of now, values besides "GoogleForms" are ignored.
+
+### FormViewID <String?>
+The ID from the URL used to access and  fill out your form. If your form's URL was 'https://docs.google.com/forms/d/e/abcdef38924824892548/viewform`, then you'd just put 'abcdef38924824892548'. (Putting the entire URL will cause a critical error!) *Only used by Google Forms.*
+
+### \*Key <String?>
+The secret internal IDs for the inputs you want to send the specified information to. (You have to dig through the Google Forms source code to find these.) *Only used by Google Forms.*
