@@ -3,7 +3,7 @@ Limited customization of the backend.
 ```ts
 let InnerWorkings = {
   Feedback?: {
-    Type: "GoogleForms",
+    Type: "GoogleForms" | "Hidden",
     FormViewID?: string,
     EmailAddressKey?: string,
     BookIDKey?: string,
@@ -17,7 +17,7 @@ let InnerWorkings = {
 An object representing a configuration for receiving Feedback. Right now, we only support Google Forms, but we're planning on adding support for other platforms like Microsoft Forms or MailChimp Survey.
 
 ### Type &lt;String&gt;
-The type of form. As of now, values besides "GoogleForms" are ignored.
+The type of form. As of now, values besides "GoogleForms" and "Hidden" are ignored. Unless the value is "Hidden", if the `Feedback` object exists, the feedback form will still show up in Explain Live.
 
 ### FormViewID &lt;String?&gt;
 The ID from the URL used to access and  fill out your form. If your form's URL was `https://docs.google.com/forms/d/e/abcdef38924824892548/viewform`, then you'd just put `abcdef38924824892548`. (Putting the entire URL will cause a critical error!) *Only used by Google Forms.*
