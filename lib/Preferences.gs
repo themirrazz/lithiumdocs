@@ -19,8 +19,8 @@ to have to take time out of your writing to fix the UX, and can be
 even more annoying to accidentally break something without even
 noticing it.
 
-For a full README, please see the GitHub's project readme file:
-https://github.com/themirrazz/lithiumdocs/blob/main/README.md
+For instructions, please see the GitHub's project documentation:
+https://github.com/themirrazz/lithiumdocs/tree/main/docs
 */
 
 // Change the user experience (UX) to your liking/style.
@@ -31,15 +31,7 @@ var UXSettings = {
 
 // Modify the inner workings (to a limited extent)
 var InnerWorkings = {
-  Feedback: {
-    Type: 'GoogleForms',
-    FormViewID: 'YOUR_FORM_VIEWING_URL_ID',
-    EmailAddressKey: '12345678910',
-    BookIDKey: '12345678910',
-    SelectedTextKey: '12345678910',
-    JSONKey: '12345678910',
-    SuggestionsKey: '12345678910'
-  }
+  Feedback: null
 };
 
 
