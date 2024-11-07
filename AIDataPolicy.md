@@ -12,3 +12,6 @@ DuckDuckGo has strict contracts with AI model providers, saying that they can't 
 
 ## 4. The model we have selected is ChatGPT.
 ChatGPT is owned by OpenAI, which requires a minimum of keeping chats for 30 days for security reasons, unless they're required by law to keep it for longer.
+
+## 5. Disable AI Explanations if you still don't trust it.
+We offer an easy way to disable AI Explanations: just open `Preferences.gs` and set the value of `UXSettings.AIExplanations` to `false`. This will prevent AI Explanations from showing up in the first place!
