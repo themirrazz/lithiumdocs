@@ -1,2 +1,2 @@
-# Coming ~~Soon~~Eventually: Lithium Guides
-Get the most out of Lithium!
+# Lithium Guides
+select a topic from the thingy
