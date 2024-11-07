@@ -49,7 +49,7 @@ function LoadFootnotesV2() {
       ranges: [],
       data: {
         footnotes: [],
-        feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.type!='Hidden': false,
+        feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.Type!='Hidden': false,
         aiInput: null,
         tabTitle: tab ? tab.getTitle() : null,
         myWorks: doc.getTabs()[0].getChildTabs().includes(tab),
@@ -66,7 +66,7 @@ function LoadFootnotesV2() {
     ranges: [],
     data: {
       footnotes: GetFootnotesFromSelection(),
-      feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.type!='Hidden': false,
+      feedback: InnerWorkings.Feedback ? InnerWorkings.Feedback.Type!='Hidden': false,
       aiInput: GetSelectionTextFromRanges(ranges),
       tabTitle: tab ? tab.getTitle() : null,
       myWorks: doc.getTabs()[0].getChildTabs().includes(tab),
