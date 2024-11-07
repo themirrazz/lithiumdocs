@@ -6,5 +6,5 @@ let UXSettings = {
 }
 ```
 
-## AIExplanations <Boolean>
+## AIExplanations &lt;Boolean&gt;
 Determines whether or not it should offer to explain selected text using AI Explanations.
